@@ -1,30 +1,29 @@
 # short-social-copy
 
-A reusable AI skill for writing short social copy that **complements a video instead of summarizing it**.
+A reusable AI skill that turns a **finished video script into short companion copy** without simply summarizing the script.
 
-Built for:
+## Input → output
 
-- TikTok and Instagram captions
-- YouTube Shorts descriptions
-- X companion posts
-- other short social copy
+**Input:** a video script  
+**Output:** TikTok/Instagram captions, YouTube Shorts descriptions, X companion posts, or similar short social copy
 
-It is deliberately **not** a video-script writer.
+This is not a scriptwriting skill. It does not start from a loose topic, article, story idea, or transcript.
 
 ## The problem
 
-AI-generated social copy often sounds polished but lifeless:
+AI-generated social copy often sounds polished but lifeless. It tends to:
 
-- it repeats the video's hook
-- summarizes the whole story
-- uses canned lines like "Here's why this matters"
-- turns a casual observation into marketing or LinkedIn copy
+- repeat the video's hook
+- summarize the full script
+- use canned marketing pivots
+- add fake-casual phrases to disguise a polished thesis
+- produce several near-identical options instead of one strong recommendation
 
-That creates copy that is technically correct but does not sound like something a person would naturally post.
+The result may be technically correct while still sounding like copy nobody would naturally post.
 
 ## The approach
 
-The skill extracts the video's central tension, removes what the viewer already hears, and chooses one complementary angle:
+The skill reads the full script, removes what the viewer already hears, and looks for one complementary angle:
 
 - the strangest implication
 - the hidden conflict
@@ -32,63 +31,63 @@ The skill extracts the video's central tension, removes what the viewer already 
 - a natural reaction
 - an honest unanswered question
 
-The output defaults to one recommended version, without unnecessary alternatives, hashtags, emojis, or calls to action.
+It then writes the shortest platform-appropriate version that preserves that angle without adding unsupported claims.
 
-## Real RON example
+## A failure caught during testing
 
-For a video about Nvidia seeking enormous outside financing:
-
-**Too written**
+Both of these drafts were rejected as too written:
 
 > Everyone's obsessed with chips.  
 > But that may not be what slows AI down.
 
-**Preferred**
-
 > the wild part isn't that Nvidia needs $500B  
 > it's that Wall Street might be the one paying for it
 
-The second version does not recap the financing mechanism. It isolates the surprising relationship and leaves the explanation to the video.
+The first reads like a polished headline. The second performs casualness but still uses a rehearsed `not X, but Y` contrast.
+
+The reusable lesson is not “use more casual phrases.” It is:
+
+- remove thesis-like contrast structures
+- remove performed conversational lead-ins
+- do not confuse lowercase text with natural voice
+- do not label any draft a positive example until the creator explicitly approves it
 
 ## Feedback becomes reusable rules
 
-The skill translates recurring creator feedback into transferable editing rules:
-
 | Feedback | Reusable correction |
 | --- | --- |
-| "sounds written" | Reduce symmetry, polish, exposition, and complete-sentence formality |
-| "sounds like AI" | Remove canned pivots, vague stakes, and generic emphasis |
-| "too much like the video" | Shift from recap to implication, reaction, or unresolved tension |
-| "too long" | Keep the single line with the most curiosity and factual integrity |
-| "too generic" | Anchor the copy in the story's distinctive fact or contradiction |
+| “sounds written” | Reduce symmetry, exposition, thesis-like contrast, and polished sentence structure |
+| “sounds like AI” | Remove canned pivots, performed casualness, vague stakes, and generic emphasis |
+| “too much like the video” | Shift from recap to implication, reaction, or unresolved tension |
+| “too long” | Keep the single line with the most curiosity and factual integrity |
+| “too generic” | Anchor the copy in the script's distinctive fact or contradiction |
 
-These are treated as patterns, not universal laws. New feedback should improve the system without overfitting it to one post.
+New feedback should improve the rule set without overfitting it to one post.
 
 ## Platform defaults
 
 | Platform | Default behavior |
 | --- | --- |
 | TikTok / Instagram | One or two short lines with a reaction, implication, or curiosity gap |
-| YouTube Shorts | Discoverable subject, without turning the description into a miniature summary |
-| X | A standalone companion thought that still rewards watching |
+| YouTube Shorts | Make the subject discoverable without writing a miniature summary |
+| X | Write a standalone companion thought that still rewards watching |
 
 ## Use
 
-Invoke the skill with an existing video script, transcript, or story and specify the platform when relevant.
-
-Example:
+Supply the complete video script and specify the platform when relevant.
 
 ```text
-Use @short-social-copy to write an X companion post for this video.
+Use @short-social-copy to turn this video script into an X companion post.
+[PASTE SCRIPT]
 ```
 
-The skill returns one recommended version first. Alternatives are only added when they explore meaningfully different angles or are explicitly requested.
+The skill gives one recommended version first. It adds alternatives only when they explore genuinely different angles or the user requests them.
 
 ## Repository structure
 
 ```text
 .
-├── SKILL.md            # Core workflow and writing rules
+├── SKILL.md            # Input contract, workflow, and writing rules
 ├── agents/openai.yaml  # ChatGPT/Codex metadata
 ├── assets/icon.svg     # Skill icon
 └── LICENSE             # MIT
@@ -96,18 +95,19 @@ The skill returns one recommended version first. Alternatives are only added whe
 
 ## Validation status
 
-This is an early working version developed from real RON short-form posts and direct creator feedback. It has been structurally validated as a ChatGPT/Codex skill.
+This is an early working version built through real RON script-to-copy testing and direct creator feedback. It is structurally validated as a ChatGPT/Codex skill.
 
-It is not presented as a proven universal writing formula. The next stage is repeated use across real TikTok, Instagram, YouTube Shorts, and X posts—logging failures, updating only reusable rules, and comparing outputs over time.
+It is not presented as a proven universal writing formula. The next stage is repeated testing across real RON scripts and platforms, recording rejected drafts and adding only lessons that transfer across multiple posts.
 
 ## Design principles
 
-1. Complement the video; do not recap it.
-2. Sound observed, not composed.
-3. Let the fact create interest; do not announce that it is interesting.
+1. Start from the full video script.
+2. Complement the script; do not recap it.
+3. Do not perform casualness.
 4. Preserve tension without manufacturing hype.
-5. Prefer one strong recommendation over a menu of minor variations.
+5. Prefer one strong recommendation over minor variations.
 6. Never trade factual accuracy for a stronger hook.
+7. Treat creator approval—not the model's explanation—as the final quality signal.
 
 ## License
 
