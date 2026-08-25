@@ -1,0 +1,14 @@
+interface:
+  display_name: Short Social Copy
+  short_description: Write natural short-form social copy that complements a video.
+  default_prompt: Use @short-social-copy to write platform-native copy for this video
+    without summarizing it.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true
