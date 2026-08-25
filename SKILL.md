@@ -1,15 +1,21 @@
 ---
 name: short-social-copy
-description: Write concise, human-sounding companion copy for TikTok and Instagram captions, YouTube Shorts descriptions, X posts, and similar short social posts built around an existing video, script, or story. Use when the user wants short-form social copy that adds a fresh angle, curiosity, reaction, or implication instead of summarizing or repeating the source. Do not use for video scripts, long-form posts, newsletters, or articles.
+description: Turn an existing video script into concise companion copy for TikTok and Instagram captions, YouTube Shorts descriptions, X posts, and similar short social posts. Use when the user supplies a script and wants platform-specific short copy that complements rather than summarizes or repeats it. Do not use without a script, or for writing video scripts, long-form posts, newsletters, or articles.
 ---
 
 # Short Social Copy
 
-Write like a smart person casually sharing something they found interesting. Complement the content; do not recap it.
+Turn a supplied video script into copy that feels natural beside the video. Complement the script; do not recap it.
+
+## Input Contract
+
+- Require the video script as the source input.
+- Accept platform, length, tone, and formatting constraints when supplied.
+- Ask for the script when it is missing. Do not substitute a topic, loose story idea, article, or transcript.
 
 ## Workflow
 
-1. Identify the video's central fact, tension, reveal, and conclusion.
+1. Read the full script and identify its central fact, tension, reveal, and conclusion.
 2. Remove anything the viewer will already hear in the opening.
 3. Choose one companion angle:
    - the strangest implication
@@ -28,7 +34,7 @@ Write like a smart person casually sharing something they found interesting. Com
 - Let the fact create interest; do not announce that it is interesting.
 - Preserve useful tension instead of explaining it away.
 - Use lowercase when it fits the creator's established style, but do not force informality.
-- Allow mild personality through word choice such as `the wild part`, `what gets me`, or `this is where it gets weird` only when it sounds earned.
+- Prefer the creator's real phrasing patterns over generic attempts to sound casual.
 
 ## Avoid
 
@@ -38,6 +44,8 @@ Write like a smart person casually sharing something they found interesting. Com
 - Marketing setup: `Here's why this matters`, `Let's break it down`, or `What happens next could change everything.`
 - Empty hype: `game changer`, `massive`, `shocking`, `insane`, `you won't believe`.
 - Over-balanced parallel sentences that feel manufactured.
+- Rehearsed conversational templates such as `the wild part isn't X, it's Y`, `what gets me is`, or `this is where it gets weird`.
+- Adding casual lead-ins merely to disguise a polished thesis.
 - Unnecessary context, conclusions, hashtags, emojis, calls to action, or engagement bait.
 - Turning a casual observation into a polished thesis.
 
@@ -73,19 +81,12 @@ Write like a smart person casually sharing something they found interesting. Com
 
 When the user rejects copy, fix the current output and extract the transferable lesson.
 
-- `sounds written` -> reduce symmetry, polish, exposition, and complete-sentence formality.
-- `sounds like AI` -> remove canned pivots, vague stakes, throat-clearing, and generic emphasis.
+- `sounds written` -> reduce symmetry, polish, exposition, thesis-like contrast, and complete-sentence formality.
+- `sounds like AI` -> remove canned pivots, performed casualness, vague stakes, throat-clearing, and generic emphasis.
 - `too much like the video` -> move from plot recap to implication, reaction, or unresolved tension.
 - `too long` -> keep the single line that creates the most curiosity without distorting the claim.
 - `too generic` -> anchor the copy in the story's most distinctive fact or contradiction.
 
 Apply the lesson to future outputs without turning one preference into a universal rule.
 
-## Calibration Example
-
-For a video about Nvidia seeking enormous outside financing, prefer:
-
-> the wild part isn't that Nvidia needs $500B  
-> it's that Wall Street might be the one paying for it
-
-This works because it selects the surprising relationship, leaves the mechanism for the video, and reads like an observation rather than a packaged description.
+Do not promote a rejected draft into a positive example. Add calibration examples only after the user explicitly approves them.
