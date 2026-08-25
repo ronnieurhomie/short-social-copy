@@ -1,8 +1,8 @@
 interface:
   display_name: Short Social Copy
-  short_description: Turn video scripts into natural short social copy.
-  default_prompt: Use @short-social-copy to turn this video script into platform-native
-    companion copy without summarizing it.
+  short_description: Turn video scripts into titles and short social copy.
+  default_prompt: Use @short-social-copy to turn this video script into a strong title
+    and platform-native companion copy.
   icon_small: assets/icon.svg
   icon_large: assets/icon.svg
 policy:
