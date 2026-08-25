@@ -1,31 +1,32 @@
 ---
 name: short-social-copy
-description: Turn an existing video script into concise companion copy for TikTok and Instagram captions, YouTube Shorts descriptions, X posts, and similar short social posts. Use when the user supplies a script and wants platform-specific short copy that complements rather than summarizes or repeats it. Do not use without a script, or for writing video scripts, long-form posts, newsletters, or articles.
+description: Turn an existing video script into a video title and concise companion copy for TikTok and Instagram captions, YouTube Shorts titles and descriptions, X posts, and similar short social posts. Use when the user supplies a script and wants a title, platform-specific short copy, or both. Keep companion copy complementary rather than summarizing or repeating the script. Do not use without a script, or for writing video scripts, long-form posts, newsletters, or articles.
 ---
 
 # Short Social Copy
 
-Turn a supplied video script into copy that feels natural beside the video. Complement the script; do not recap it.
+Turn a supplied video script into a clear video title, natural companion copy, or both. Package the central tension in the title; complement rather than recap the script in the copy.
 
 ## Input Contract
 
 - Require the video script as the source input.
-- Accept platform, length, tone, and formatting constraints when supplied.
+- Accept requested deliverables, platform, length, tone, and formatting constraints when supplied.
 - Ask for the script when it is missing. Do not substitute a topic, loose story idea, article, or transcript.
 
 ## Workflow
 
 1. Read the full script and identify its central fact, tension, reveal, and conclusion.
-2. Remove anything the viewer will already hear in the opening.
-3. Choose one companion angle:
+2. Determine whether the user wants a title, companion copy, or both.
+3. For companion copy, remove anything the viewer will already hear in the opening.
+4. Choose one companion angle:
    - the strangest implication
    - the hidden conflict
    - the part that changes how the story feels
    - a sharp reaction the viewer may have afterward
    - one unanswered question that creates honest curiosity
-4. Draft the shortest version that preserves that angle.
-5. Read it as speech. Rewrite any phrase that sounds composed, promotional, corporate, or essay-like.
-6. Check factual wording against the supplied source. Do not add unsupported certainty.
+5. Draft the shortest version that preserves that angle.
+6. Read it as speech. Rewrite any phrase that sounds composed, promotional, corporate, or essay-like.
+7. Check factual wording against the supplied script. Do not add unsupported certainty.
 
 ## Voice
 
@@ -48,6 +49,16 @@ Turn a supplied video script into copy that feels natural beside the video. Comp
 - Adding casual lead-ins merely to disguise a polished thesis.
 - Unnecessary context, conclusions, hashtags, emojis, calls to action, or engagement bait.
 - Turning a casual observation into a polished thesis.
+
+## Video Titles
+
+- Capture the script's central tension, decision, conflict, or surprising fact.
+- Make the subject immediately clear; do not depend on vague curiosity.
+- Prefer concrete nouns and active language.
+- Keep only the detail that earns the click and survives the full script.
+- Avoid clickbait, generic stakes, unsupported conclusions, and title formulas.
+- Do not force the title to complement the video. Its job is to package the video accurately.
+- Give one recommended title first. Add alternatives only when they represent genuinely different framings.
 
 ## Platform Defaults
 
@@ -72,6 +83,7 @@ Turn a supplied video script into copy that feels natural beside the video. Comp
 ## Output
 
 - Give one recommended version first.
+- When the user requests both, label them `Title` and `Companion copy`.
 - Give alternatives only when they explore meaningfully different angles or the user asks.
 - Do not explain the copy unless the user requests reasoning.
 - Respect a requested character count or platform limit.
