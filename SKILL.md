@@ -36,6 +36,7 @@ Turn a supplied video script into a clear video title, natural companion copy, o
 - Preserve useful tension instead of explaining it away.
 - Use lowercase when it fits the creator's established style, but do not force informality.
 - Prefer the creator's real phrasing patterns over generic attempts to sound casual.
+- When a casual observation expresses the tension clearly, prefer it over a more elegant formulation.
 
 ## Avoid
 
@@ -102,3 +103,20 @@ When the user rejects copy, fix the current output and extract the transferable 
 Apply the lesson to future outputs without turning one preference into a universal rule.
 
 Do not promote a rejected draft into a positive example. Add calibration examples only after the user explicitly approves them.
+
+## Calibration Examples
+
+### Casual observation
+
+**Script tension:** A humanoid robot can perform kung fu, but researchers still struggle with seemingly simple manipulation tasks like picking up a tray.
+
+**Approved companion copy:**
+
+> Kinda funny that kung fu looks easy compared to picking up a tray.
+
+**Why it works:**
+- Sounds like a spontaneous observation rather than a written thesis.
+- Reuses the story's strongest contrast without summarizing the explanation.
+- Leaves the reason unresolved so the video still earns the explanation.
+- Uses ordinary phrasing instead of polished or symmetrical language.
+- Keeps the companion copy to one thought.
